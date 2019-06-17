@@ -2,7 +2,7 @@
 
 ## 预览
 
-<img src="http://blog.inoob.xyz/github/whiteboard/1.jpg" width="800">
+<img src="http://blog.inoob.xyz/github/whiteboard/1.jpg" width="800"/>
 
 ## 开始
 
