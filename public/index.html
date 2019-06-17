@@ -1,0 +1,26 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WhiteBoard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input class="jscolor" value="#000" id="color-picker" onchange="changeColor(this.jscolor)" />
+    <input
+      type="range"
+      id="weight"
+      min="1"
+      max="20"
+      step="0.5"
+      value="1"
+      onchange="changeWeight(this.value)"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <script src="jscolor.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>
