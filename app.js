@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const server = require('http').createServer(app);
-const io = require('socket.io').listen(server).sockets;
+const io = require('socket.io')(server);
 const path = require('path');
 const port = process.env.port || 8080;
 
@@ -19,7 +19,7 @@ io.on('connection', socket => {
     socket.broadcast.emit('drawing', data);
   });
 
-  socket.on('disconnected', () => {
+  socket.on('disconnect', () => {
     console.log('Client disconnected');
   });
 });

@@ -11,7 +11,7 @@ function setup() {
   pg = createGraphics(windowWidth, windowHeight);
 
   // 初始化socket连接
-  socket = io.connect('http://localhost:8080');
+  socket = io.connect();
 
   // 接收socket服务器的广播信息
   socket.on('drawing', data => {
